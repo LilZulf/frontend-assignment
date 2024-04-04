@@ -27,6 +27,8 @@ export const Auth = () => {
 
             // You can add your login logic here using the username and password state
             console.log('Login submitted with:', {username, password})
+            console.log('accessToken:', localStorage.getItem('accessToken'))
+            // console.log('refreshtoken:', loginResponse.data.data.refresh_token)
         } catch (error) {
             setStatus('Error')
         }

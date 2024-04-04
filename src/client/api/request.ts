@@ -4,7 +4,7 @@ import {type JwtPayload, jwtDecode} from 'jwt-decode'
 
 const api = axios.create({
     baseURL: process.env.NEXT_PUBLIC_REST_API_URL,
-    timeout: 30000
+    timeout: 30000,
 })
 
 let refreshTokenPromise: Promise<AxiosResponse<RefreshTokenResponse, any>> | null = null
